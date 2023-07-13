@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title><b>Text Summarizer</b></title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span class="heading_font">Text Summarizer</span></h2>
+            <div class='description'>
+    			<p>A Web App which summarizes texts.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			<p>Original length : {{answer[1]}}</p>
+			<p>Summarized length : {{answer[2]}}</p>
+			<div class="summary">
+				<p>{{answer[0]}}</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/Abhishek-248"><i class="fab fa-github fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'> Abhishek &#128526;</p>
+        </div>
+
+	</body>
+</html>
